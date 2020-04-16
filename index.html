@@ -1,0 +1,80 @@
+﻿<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Tradutor de Daedric</title>
+    <meta name="viewport" content="width=divece-width, initial-scale=1">
+    <link rel="home" href="https://rodcordeiro.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="Arquivos/skyrim-icon-41570.png">
+    <meta property="og:site_name" content="Tradutor de Daedric">
+
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="Arquivos/estilo.css">
+    <meta name="msapplication-TileColor" content="#CCCCCC">
+	<!-- FAVICON -->
+	<link rel="apple-touch-icon" sizes="57x57" href="Arquivos/skyrim/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="Arquivos/skyrim/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="Arquivos/skyrim/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="Arquivos/skyrim/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="Arquivos/skyrim/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="Arquivos/skyrim/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="Arquivos/skyrim/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="Arquivos/skyrim/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="Arquivos/skyrim/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="Arquivos/skyrim/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="Arquivos/skyrim/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="Arquivos/skyrim/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="Arquivos/skyrim/favicon-16x16.png">
+	<link rel="manifest" href="Arquivos/skyrim/manifest.json">
+	<meta name="msapplication-TileImage" content="Arquivos/skyrim/ms-icon-144x144.png">
+</head>
+<body>
+    <div id="content">
+       <nav id="menu">
+          <ul>
+            <a href="https://rodcordeiro.github.io/"><img alt="Império" src="Arquivos/skyrim-icon-41570.png"></a>
+            <li>Cordeiro's DEV.</li>
+        </ul>
+    </nav>
+    <div id="anuncio">
+        <h2>Bem vindo!!</h2></br>
+        <p>
+            Seja bem vindo(a) ao meu tradutor de Daedric, aqui você poderá escrever frases e traduzí-las para Daedric, o alfabeto de <em>Elder Scroll</em>.
+        </p>
+        <p><span class="obs">
+            <strong>OBS.:</strong> O alfabeto não possui pontuações então por enquanto evite frases que possuam pontuação, caso eu não encontre um que possua, irei desenvolve-las.
+        </span></p>
+	 
+    </div>        
+    <audio autoplay>
+        <source src="Arquivos/song.mp3" type="audio/mpeg">
+        <source src="Arquivos/song.ogg" type="audio/ogg">
+    </audio>
+<!-- SEÇÕES -->
+<!-- tradutor -->
+<div id="tradutor">
+   <textarea class="texto" placeholder="Write here..." id="txt"></textarea>
+   <button class="btn btn-3 btn-3e" onClick="morse()">Traduzir</button>
+   <textarea class="aurebesh hide" placeholder="Shadow Hide ou" id="out"></textarea>
+</div>
+
+<!-- Caminho do conhecimento -->
+    <script>
+      function show(){
+          document.getElementById("out").classList.remove("hide");
+      }
+          function morse(){
+            var text = document.getElementById("txt").value;
+            document.getElementById("out").innerHTML = text;
+            show();
+        }
+    </script>
+</div>
+<footer>
+    <span>Rodrigo Cordeiro</span>
+</footer>
+</body>
+</html>
