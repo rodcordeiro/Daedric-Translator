@@ -1,15 +1,6 @@
 /* Os efeitos de links e botões estão ao fim da página */
-@font-face {
-    font-family: 'Daedra-Bold';
-    src: url('https://rodcordeiro.github.io/shares/fonts/daedra/Daedra-Bold.eot');
-    src: url('https://rodcordeiro.github.io/shares/fonts/daedra/Daedra-Bold.woff2') format('woff2'),
-         url('https://rodcordeiro.github.io/shares/fonts/daedra/Daedra-Bold.woff') format('woff'),
-         url('https://rodcordeiro.github.io/shares/fonts/daedra/Daedra-Bold.ttf') format('truetype'),
-         url('https://rodcordeiro.github.io/shares/fonts/daedra/Daedra-Bold.svg#Daedra-Bold') format('svg'),
-         url('https://rodcordeiro.github.io/shares/fonts/daedra/Daedra-Bold.eot?#iefix') format('embedded-opentype');
-    font-weight: normal;
-    font-style: normal;
-}*{
+@import url("https://rodcordeiro.github.io/shares/fonts/daedra/font.css");
+*{
     padding: 0;
     margin: 0;
     font-family: 'Abel', sans-serif;
